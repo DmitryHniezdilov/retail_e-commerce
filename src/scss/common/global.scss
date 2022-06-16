@@ -1,0 +1,84 @@
+@import "../utils/variables";
+
+@import "../mixins/media";
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+    padding-inline-start: 0;
+    padding-inline-end: 0;
+    padding: 0;
+}
+
+::selection {
+    // background: rgba(138, 122, 152, 0.5);
+}
+
+::-moz-selection {
+    // background: rgba(138, 122, 152, 0.5);
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    background: $color-bg;
+    color: $color-text-primary;
+    font-family: $font-main;
+    font-size: 16px;
+    line-height: 1.4;
+}
+
+img {
+    max-width: 100%;
+}
+
+.page {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100%;
+}
+
+.center {
+    max-width: $width-content;
+    margin: 0 auto;
+    padding: 0 $width-gap-gorizontal;
+}
+
+.icon {
+    width: 100%;
+    height: 100%;
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.reset-fz {
+    line-height: 1;
+    font-size: 0;
+}
+
+.hidden {
+    visibility:hidden;
+    display: flex;
+    width: 0;
+    height: 0;
+}
+
+.modal-backdrop {
+    background-color: transparent !important;
+    background: linear-gradient(180deg, transparent 0px, transparent 70px, rgba(196,196,196,.5) 71px, rgba(196,196,196,.5) 100%);
+ }

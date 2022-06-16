@@ -1,0 +1,39 @@
+.header-icons {
+    font-size: 0;
+
+    &__btn {
+        width: 22px;
+        height: 20px;
+        background: transparent;
+        border: none;
+        cursor: pointer;
+
+        &:not(:first-child) {
+            margin-left: 20px;
+        }
+
+        &--cart {
+            
+        }
+        &--heart {
+
+        }
+        &--profile {
+
+        }
+
+        @include media-to-xs {
+            &:not(:first-child) {
+                display: none;
+            }
+        }
+
+        @include media-xs {
+            width: 20px;
+            height: 18px;
+        }
+    }
+
+    &__icon {
+    }
+}
