@@ -12,6 +12,10 @@
         line-height: 1;
     }
 
+    &__search-wrap {
+        display: none;
+    }
+
     &__drop-wrap {
     }
 
@@ -29,6 +33,7 @@
         padding-top: 70px;
 
         .modal-dialog {
+            width: 100% !important;
             max-width: none;
             margin: 0;
         }
@@ -90,7 +95,7 @@
         }
 
         &-search {
-
+            margin-top: 20px;
         }
     }
 
@@ -113,5 +118,100 @@
 
     &__logo-img {
         width: inherit;
+    }
+
+    @include media-xs {
+        &__drop-wrap {
+            min-width: 100px;
+        }
+
+        &__logo {
+            width: 125px;
+            max-width: 125px;
+        }
+
+        &__inner {
+            min-height: 80px;
+        }
+
+        &__modal {
+            padding-top: 80px;
+        }
+    }
+
+    @include media-lg {
+        &__inner {
+            flex-flow: row wrap;
+            min-height: auto;
+            padding: 44px 0 33px;
+            justify-content: space-between;
+        }
+
+        &__logo-wrap {
+            order: -1;
+            width: 100%;
+            padding-bottom: 39px;
+            display: flex;
+            justify-content: center;
+        }
+
+        &__search-wrap {
+            display: block;
+            min-width: 200px;
+        }
+
+        &__icons-wrap {
+            min-width: 200px;
+        }
+
+        &__logo {
+            width: 162px;
+            max-width: 162px;
+        }
+
+        &__modal {
+            padding-top: 0;
+            display: block !important;
+            position: static !important;
+            opacity: 1 !important;
+
+            &.fade {
+                .modal-dialog {
+                    transform: translate(0, 0) !important;
+                    opacity: 1;
+                }
+    
+                &.in {
+                    .modal-dialog {
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+
+        &__button-mob,
+        &__nav-drop-search {
+            display: none;
+        }
+
+        &__nav-drop {
+            padding: 0;
+            border-top: none;
+
+            &-list {
+                display: flex;
+            }
+
+            &-link {
+                display: inline-block;
+                padding: 3px 15px 1px;
+            }
+        }
+    }
+
+    @include media-content {
+        &__nav-drop-link {
+            padding: 3px 25px 1px;
+        }
     }
 }
