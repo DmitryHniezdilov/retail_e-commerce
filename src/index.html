@@ -5,11 +5,24 @@
     })
     <body>
         @@include('icons/icons.svg')
-        @@include('html/header.html')
-        <main>
-            <img src="@img/cov.jpg" alt=""/>
-        </main>
-        @@include('html/footer.html')
+        <div class="page">
+            @@include('html/header.html')
+            <main>
+                <div class="banner-index">
+                    <div class="banner-index__center center">
+                        <div class="banner-index__paper">
+                            <h3 class="banner-index__title">Vision</h3>
+                            <p class="banner-index__text">Penatibus sem vitae mollis luctus mi tellus. Maximus eu eleifend aptent dapibus metus maecenas consequat. Elementum interdum a semper. Netus nullam eros nisi volutpat nibh ex ultricies. Pharetra sagittis sit aliquet at. Magna nam platea justo.
+                            </p>
+                            <div class="banner-index__btn-wrap">
+                                <a href="#" class="btn"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+            @@include('html/footer.html')
+        </div>
         <script src="js/main.min.js"></script>
     </body>
 </html>

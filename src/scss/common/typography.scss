@@ -1,0 +1,13 @@
+h3 {
+    margin: 0 0 5px;
+    text-align: left;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 48px;
+    text-transform: none;
+
+    @include media-lg {
+        font-size: 48px;
+        margin-bottom: 30px;
+    }
+}

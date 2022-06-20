@@ -12,6 +12,12 @@
     }
 }
 
+@mixin media-xxs {
+    @media  only screen and (min-width: $width-xxs) {
+        @content;
+    }
+}
+
 @mixin media-xs {
     @media  only screen and (min-width: $width-xs) {
         @content;

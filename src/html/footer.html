@@ -1,3 +1,72 @@
-<footer>
-    <p>footer</p>
+<footer class="footer">
+    <div class="center footer__center">
+        <div class="footer__top">
+            <div class="footer__logo-wrap">
+                <a href="#" class="footer__logo">
+                    <img src="img/logo-ft.svg" alt="logo footer e-commerce" class="footer__logo-img">
+                </a>
+            </div>
+            <nav class="footer__nav">
+                <ul class="footer__nav-row">
+                    <li class="footer__nav-col">
+                        <h6 class="footer__nav-title footer__nav-title--desc">Products</h6>
+                        <button class="footer__nav-title footer__nav-title--collapse" data-toggle="collapse" data-target="#collapseProd" aria-expanded="false" aria-controls="collapse products">Products</button>
+                        <div class="footer__collapse collapse" id="collapseProd">
+                            <ul class="footer__nav-list">
+                                <li class="footer__nav-item">
+                                    <a href="" class="footer__nav-link">Sand Stone</a>
+                                </li>
+                                <li class="footer__nav-item">
+                                    <a href="" class="footer__nav-link">Stone</a>
+                                </li>
+                                <li class="footer__nav-item">
+                                    <a href="" class="footer__nav-link">Cement</a>
+                                </li>
+                                <li class="footer__nav-item">
+                                    <a href="" class="footer__nav-link">Soft Stone</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="footer__nav-col">
+                        <h6 class="footer__nav-title footer__nav-title--desc">Services</h6>
+                        <button class="footer__nav-title footer__nav-title--collapse" data-toggle="collapse" data-target="#collapseServise" aria-expanded="false" aria-controls="collapse products">Services</button>
+                        <div class="footer__collapse collapse" id="collapseServise">
+                            <ul class="footer__nav-list">
+                                <li class="footer__nav-item">
+                                    <a href="" class="footer__nav-link">Measurement Service</a>
+                                </li>
+                                <li class="footer__nav-item">
+                                    <a href="" class="footer__nav-link">Product Advice</a>
+                                </li>
+                                <li class="footer__nav-item">
+                                    <a href="" class="footer__nav-link">Interior Design</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="footer__nav-col">
+                        <h6 class="footer__nav-title footer__nav-title--desc">Contact information</h6>
+                        <button class="footer__nav-title footer__nav-title--collapse" data-toggle="collapse" data-target="#collapseContact" aria-expanded="false" aria-controls="collapse products">Contact information</button>
+                        <div class="footer__collapse collapse" id="collapseContact">
+                            <p class="footer__contact-text">
+                                3181 Al Imam Saud Ibn Abdul Aziz Branch Rd, 
+                                An&nbsp;Nuzhah, Riyadh&nbsp;12474,<br>
+                                Saudi&nbsp;Arabia
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="footer__bottom">
+            <div class="footer__socials-wrap">
+                @@include('./components/socials.html')
+            </div>
+            <div class="footer__copy-wrap">
+                <p class="footer__copy">Copyright © 2022 | All Rights Reserved.</p>
+                <p class="footer__author">Created with love by thecreation.design</p>
+            </div>
+        </div>
+    </div>
 </footer>

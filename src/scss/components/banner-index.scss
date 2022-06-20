@@ -1,0 +1,25 @@
+.banner-index {
+
+    &__center {
+        position: relative;
+    }
+
+    &__paper {
+        padding: 13px 20px 35px;
+        background-color: $color-banner-index-bcg;
+        border: 1px solid #000;
+    }
+
+    &__title {
+    }
+
+    &__text {
+        font-size: 20px;
+        line-height: 28px;
+        font-weight: 300;
+        color: $color-banner-index-text;
+    }
+
+    &__btn-wrap {
+    }
+}
