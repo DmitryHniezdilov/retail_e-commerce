@@ -7,7 +7,7 @@
     width: 180px;
     height: 45px;
     padding: 15px;
-    font-size: 15px;
+    font-size: 16px;
     font-weight: 700;
     color: $color-btn-text;
     text-decoration: none !important;
@@ -23,10 +23,8 @@
     border: none;
     z-index: 1;
 
-    &--secondary {
-        // background: linear-gradient(45deg, #664480, #664480);
-        // font-size: 14px;
-        // padding: 15px;
+    &--sm {
+        width: 153px;
     }
 
     &--md {
@@ -75,6 +73,11 @@
         height: 52px;
         font-size: 16px;
         line-height: 16px;
+
+        &--sm {
+            width: 180px;
+            height: 52px;
+        }
 
         &--banner {
             // width: 250px;

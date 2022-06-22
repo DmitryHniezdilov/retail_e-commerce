@@ -1,7 +1,7 @@
 h2 {
     position: relative;
     display: inline-block;
-    margin-bottom: 15px;
+    margin-bottom: 17px;
     font-size: 30px;
     font-weight: 700;
     line-height: 38px;
@@ -13,7 +13,7 @@ h2 {
         display: block;
         width: 125px;
         height: 3px;
-        bottom: 0;
+        bottom: -4px;
         left: 50%;
         transform: translateX(-50%);
         background-color: $color-decor;
@@ -45,10 +45,24 @@ h3 {
     }
 }
 
+h6 {
+    margin: 0 0 9px;
+    text-align: center;
+    font-size: 26px;
+    font-weight: 600;
+    line-height: 26px;
+    text-transform: capitalize;
+
+    @include media-lg {
+        // font-size: 48px;
+        // margin-bottom: 30px;
+    }
+}
+
 .content-center {
     text-align: center;
 
-    p {
+    &__desc {
         max-width: 830px;
         margin: 0 auto;
         font-size: 15px;
@@ -57,7 +71,7 @@ h3 {
     }
 
     @include media-lg {
-        p {
+        &__desc {
             font-size: 20px;
             line-height: 28px;
         }
