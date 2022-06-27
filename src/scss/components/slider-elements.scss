@@ -1,0 +1,39 @@
+.slider-elements {
+    .slick-slide {
+        outline: none;
+    }
+
+    &--arrows {
+        .slick-arrow {
+            padding: 0;
+            font-size: 0;
+            position: absolute;
+            z-index: 1;
+            top: 145px;
+            outline: none;
+            transition: all .2s;
+            width: 37px;
+            height: 37px;
+            background-repeat: no-repeat;
+            background-color: $color-bg;
+            border: 1px solid transparent;
+            background-image: url("data:image/svg+xml,%3Csvg width='12' height='19' viewBox='0 0 12 19' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1.5 1L10 9.5L1.5 18' stroke='black' stroke-width='1.5' stroke-linecap='round'/%3E%3C/svg%3E%0A");
+            background-position: center;
+    
+            &:hover,
+            &:focus,
+            &:active {
+                border: 1px solid $color-text-primary;
+            }
+        }
+    
+        .slick-prev {
+            left: -15px;
+            transform: matrix(-1, 0, 0, 1, 0, 0);
+        }
+    
+        .slick-next {
+            right: -15px;
+        }
+    }
+}
