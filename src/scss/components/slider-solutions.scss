@@ -6,14 +6,6 @@
         max-width: 400px;
         margin: -10px auto;
 
-        .slick-prev {
-            left: -5px;
-        }
-
-        .slick-next {
-            right: -5px;
-        }
-
         &:not(.slick-initialized) {
             display: flex;
             justify-content: center;
@@ -60,6 +52,8 @@
     }
 
     @include media-xxs {
+        margin-right: -15px;
+        margin-left: -15px;
 
         &__slick {
             max-width: 600px;
@@ -123,11 +117,14 @@
         }
     }
 
-    @include media-lg {
+    @include media-content {
+        margin-right: -33px;
+        margin-left: -33px;
+
         &__slick {
-            max-width: 961px;
-            margin-right: -32px;
-            margin-left: -32px;
+            max-width: 966px;
+            margin-right: 0;
+            margin-left: 0;
 
             .slick-prev {
                 left: 16px;
@@ -139,8 +136,8 @@
         }
 
         &__slide-wrap {
-            padding-right: 32px;
-            padding-left: 32px;
+            padding-right: 33px;
+            padding-left: 33px;
         }
     }
 }
