@@ -46,11 +46,25 @@
     }
 
     &:hover,
-    &:focus {
+    &:focus,
+    &:active {
         background: $color-btn-fill-hov;
         color: $color-btn-text-hov;
         border: 1px solid $color-btn-fill;
         transition: all .3s ease;
+    }
+
+    &--light {
+        color: #040404;
+        background: #fff;
+
+        &:hover,
+        &:focus,
+        &:active {
+            color: #fff;
+            border: 1px solid #fff;
+            transition: all .3s ease;
+        }
     }
 
     &:hover.button--secondary,

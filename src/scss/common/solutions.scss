@@ -104,8 +104,13 @@
 
         &__text-wrap {
             max-width: 610px;
-            flex: 1;
+
+            @supports (flex: 1) {
+                flex: 1;
+            }
         }
+
+
 
         &__desc {
             margin-bottom: 49px;
