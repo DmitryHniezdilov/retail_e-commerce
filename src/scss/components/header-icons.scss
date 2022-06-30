@@ -22,13 +22,13 @@
 
         }
 
-        @include media-to-xs {
+        @include media-to-md {
             &:not(:first-child) {
                 display: none;
             }
         }
 
-        @include media-xs {
+        @include media-md {
             width: 20px;
             height: 18px;
         }

@@ -38,7 +38,7 @@
             right: -5px;
         }
 
-        @include media-xs {
+        @include media-md {
             .slick-prev {
                 left: 0;
             }
@@ -81,7 +81,7 @@
             background-color: #000;
         }
 
-        @include media-xs {
+        @include media-md {
             .slick-dots {
                 margin-top: 10px;
             }

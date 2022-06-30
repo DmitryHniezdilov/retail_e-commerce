@@ -72,7 +72,7 @@
             }
         }
 
-    @include media-xs {
+    @include media-md {
         margin-right: -15px;
         margin-left: -15px;
 
@@ -98,7 +98,7 @@
         }
     }
 
-    @include media-md {
+    @include media-lg {
         &__slick {
             max-width: 1090px;
 
@@ -115,7 +115,7 @@
         }
     }
 
-    @include media-lg {
+    @include media-xl {
         margin: 40px -15px 0;
 
         &__slick {

@@ -78,7 +78,7 @@ img {
     background-color: transparent !important;
     background: linear-gradient(180deg, transparent 0px, transparent 70px, rgba(196,196,196,.8) 71px, rgba(196,196,196,.8) 100%);
 
-    @include media-xs {
+    @include media-md {
         background: linear-gradient(180deg, transparent 0px, transparent 80px, rgba(196,196,196,.8) 81px, rgba(196,196,196,.8) 100%);
     }
  }
@@ -98,13 +98,13 @@ img {
         margin-top: 60px;
     }
 
-    @include media-md {
+    @include media-lg {
         &-lg {
             margin-top: 90px;
         }
     }
 
-    @include media-lg {
+    @include media-xl {
         &-lg {
             margin-top: 120px;
         }
@@ -112,15 +112,53 @@ img {
 }
 
 .gap-btm {
-    @include media-md {
+    @include media-lg {
         &-lg {
             margin-bottom: 90px;
         }
     }
 
-    @include media-lg {
+    @include media-xl {
         &-lg {
             margin-bottom: 120px;
+        }
+    }
+}
+
+.hide-to-xs {
+    @include media-to-md {
+        display: none;
+    }
+}
+
+.decor-bcg {
+    position: relative;
+    z-index: 1;
+
+    &--top {
+        &::before {
+            content: '';
+            display: block;
+            position: absolute;
+            top: 0;
+            right: 0;
+            left: 0;
+            height: 516px;
+            background: url("/img/decor-page-mob.png") center repeat-x;
+            z-index: -1;
+        }
+    }
+
+    &--btm {
+        &::after {
+            content: '';
+            display: block;
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            height: 508px;
+            background: url("/img/decor-page-btm-mob.png") center repeat-x;
         }
     }
 }

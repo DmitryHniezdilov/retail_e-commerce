@@ -85,7 +85,7 @@
     &__video-text-btm {
     }
 
-    @include media-lg {
+    @include media-xl {
         display: flex;
         flex-flow: row nowrap;
 

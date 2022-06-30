@@ -26,7 +26,7 @@ h2 {
         background-color: $color-decor;
     }
 
-    @include media-lg {
+    @include media-xl {
         font-size: 48px;
         line-height: 48px;
         margin-bottom: 55px;
@@ -45,7 +45,7 @@ h3 {
     line-height: 30px;
     text-transform: none;
 
-    @include media-lg {
+    @include media-xl {
         font-size: 48px;
         line-height: 58px;
         margin-bottom: 30px;
@@ -85,7 +85,7 @@ h6 {
         margin-top: 23px;
     }
 
-    @include media-lg {
+    @include media-xl {
         &__desc {
             font-size: 20px;
             line-height: 28px;

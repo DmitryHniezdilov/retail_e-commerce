@@ -149,7 +149,7 @@
             margin: 0;
       }
 
-      @include media-xxs {
+      @include media-xs {
             &__center {
                   display: flex;
                   flex-flow: row nowrap;
@@ -179,7 +179,7 @@
             }
       }
 
-      @include media-md {
+      @include media-lg {
             &__collapse {
                   display: block !important;
             }
@@ -243,7 +243,7 @@
             }
       }
 
-      @include media-lg {
+      @include media-xl {
             padding: 50px 0 25px;
 
             &__logo {

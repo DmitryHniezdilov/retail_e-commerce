@@ -1,19 +1,13 @@
 @import "../utils/variables";
 
-@mixin media-to-xs {
-    @media  only screen and (max-width: $width-xs - 1) {
-        @content;
-    }
-}
-
 @mixin media-to-md {
     @media  only screen and (max-width: $width-md - 1) {
         @content;
     }
 }
 
-@mixin media-xxs {
-    @media  only screen and (min-width: $width-xxs) {
+@mixin media-to-lg {
+    @media  only screen and (max-width: $width-lg - 1) {
         @content;
     }
 }
@@ -32,6 +26,12 @@
 
 @mixin media-lg {
     @media  only screen and (min-width: $width-lg) {
+        @content;
+    }
+}
+
+@mixin media-xl {
+    @media  only screen and (min-width: $width-xl) {
         @content;
     }
 }

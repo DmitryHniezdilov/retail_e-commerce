@@ -6,7 +6,7 @@
     vertical-align: middle;
     width: 180px;
     height: 45px;
-    padding: 15px;
+    padding: 15px 15px 13px;
     font-size: 16px;
     font-weight: 700;
     color: $color-btn-text;
@@ -74,7 +74,7 @@
         // transition: all .6s;
     }
 
-    @include media-md {
+    @include media-lg {
         &--banner {
             // width: 220px;
             // height: 56px;
@@ -83,13 +83,18 @@
         }
     }
 
-    @include media-lg {
+    @include media-xl {
         height: 52px;
         font-size: 16px;
         line-height: 16px;
 
         &--sm {
             width: 180px;
+            height: 52px;
+        }
+
+        &--md {
+            width: 210px;
             height: 52px;
         }
 

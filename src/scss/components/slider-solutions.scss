@@ -51,7 +51,7 @@
         z-index: -1;
     }
 
-    @include media-xxs {
+    @include media-xs {
         margin-right: -15px;
         margin-left: -15px;
 
@@ -84,7 +84,7 @@
         }
     }
 
-    @include media-xs {
+    @include media-md {
         &__slick {
             max-width: 726px;
 
@@ -94,7 +94,7 @@
         }
     }
 
-    @include media-md {
+    @include media-lg {
         &__slick {
             max-width: 1090px;
             margin-right: auto;
