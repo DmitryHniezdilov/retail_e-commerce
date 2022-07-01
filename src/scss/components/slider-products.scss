@@ -83,7 +83,7 @@
 
         &__slick {
             max-width: 420px;
-            margin: -10px auto;
+            margin: -10px auto 0;
 
             &:not(.slick-initialized) {
                 display: flex;
