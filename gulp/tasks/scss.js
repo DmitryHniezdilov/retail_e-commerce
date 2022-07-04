@@ -3,7 +3,7 @@ import gulpSass from 'gulp-sass';
 import rename from 'gulp-rename';
 
 import cleanCss from 'gulp-clean-css';
-import webpcss from 'gulp-webpcss';
+// import webpcss from 'gulp-webpcss'; 
 import autoprefixer from 'gulp-autoprefixer';
 import groupCssMediaQueries from 'gulp-group-css-media-queries';
 
@@ -17,7 +17,6 @@ export const scss = () => {
                 message: "Error: <%= error.message %>"
             })
         ))
-        .pipe(app.plugins.replace(/@img\//g, '../img/'))
         .pipe(sass({
             outputStyle: 'expanded'
         }))
@@ -27,17 +26,18 @@ export const scss = () => {
                 groupCssMediaQueries()
             )
         )
-        .pipe(
-            app.plugins.if(
-                app.isBuild,
-                webpcss(
-                    {
-                        webpClass: ".webp",
-                        noWebpClass: ".no-webp"
-                    }
-                )
-            )
-        )
+        .pipe(app.plugins.replace(/@img\//g, '../img/'))
+        // .pipe(
+        //     app.plugins.if(
+        //         app.isBuild,
+        //         webpcss(
+        //             {
+        //                 webpClass: ".webp",
+        //                 noWebpClass: ".no-webp"
+        //             }
+        //         )
+        //     )
+        // )
         .pipe(
             app.plugins.if(
                 app.isBuild,

@@ -1,6 +1,8 @@
 .slider-solutions {
         margin-right: -10px;
         margin-left: -10px;
+        position: relative;
+        z-index: 1;
 
     &__slick {
         max-width: 400px;
@@ -51,7 +53,7 @@
         z-index: -1;
     }
 
-    @include media-xs {
+    @include media-sm {
         margin-right: -15px;
         margin-left: -15px;
 

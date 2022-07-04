@@ -93,7 +93,9 @@
         }
 
         &--reverse {
+            position: relative;
             text-align: right;
+            z-index: 2;
 
             .banner-index__center {
                 overflow: visible;

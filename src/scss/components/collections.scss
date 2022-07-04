@@ -47,13 +47,16 @@
     }
 
     &__desc-wrap {
-        flex: 1;
         padding: 15px 15px 17px;
         display: flex;
         flex-flow: column nowrap;
         justify-content: center;
         align-items: center;
         background-color: #fff;
+
+        @supports (flex: 1) {
+            flex: 1;
+        }
     }
 
     &__title {
@@ -105,6 +108,7 @@
     @include media-lg {
         &__item {
             flex: 0 1 25%;
+            max-width: 25%;
 
             &:nth-last-child(-n+2) {
                 display: block;

@@ -27,24 +27,6 @@
         width: 153px;
     }
 
-    &--md {
-        // width: 190px;
-    }
-
-    &--lg {
-        // width: 250px;
-        // padding: 22px;
-        // font-size: 20px;
-    }
-
-    &--fullWidth {
-        width: 100%;
-    }
-
-    &--banner {
-        width: 190px;
-    }
-
     &:hover,
     &:focus,
     &:active {
@@ -67,22 +49,6 @@
         }
     }
 
-    &:hover.button--secondary,
-    &:focus.button--secondary {
-        // background: linear-gradient(45deg, #744796, #bc65c4);
-        // color: $color-text-primary;
-        // transition: all .6s;
-    }
-
-    @include media-lg {
-        &--banner {
-            // width: 220px;
-            // height: 56px;
-            // padding: 16px;
-            // font-size: 18px;
-        }
-    }
-
     @include media-xl {
         height: 52px;
         font-size: 16px;
@@ -96,13 +62,6 @@
         &--md {
             width: 210px;
             height: 52px;
-        }
-
-        &--banner {
-            // width: 250px;
-            // height: 68px;
-            // padding: 22px;
-            // font-size: 20px;
         }
     }
 }

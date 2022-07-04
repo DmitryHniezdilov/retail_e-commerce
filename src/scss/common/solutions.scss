@@ -85,6 +85,12 @@
     &__video-text-btm {
     }
 
+    @include media-lg {
+        &__desc {
+            margin-bottom: 27px;
+        }
+    }
+
     @include media-xl {
         display: flex;
         flex-flow: row nowrap;

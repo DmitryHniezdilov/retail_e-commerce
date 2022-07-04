@@ -34,6 +34,10 @@ body {
     line-height: 1.4;
 }
 
+main {
+    overflow: hidden;
+}
+
 img {
     max-width: 100%;
 }
@@ -98,13 +102,24 @@ img {
         margin-top: 60px;
     }
 
+    @include media-md {
+        &-xs {
+            margin-top: 50px;
+        }
+    }
+
     @include media-lg {
         &-xs {
             margin-top: 60px;
         }
 
-        &-lg {
+        &-lg,
+        &-lg-from-lg {
             margin-top: 90px;
+        }
+
+        &-md {
+            margin-top: 60px;
         }
     }
 
@@ -113,7 +128,12 @@ img {
             margin-top: 80px;
         }
 
-        &-lg {
+        &-md {
+            margin-top: 120px;
+        }
+
+        &-lg,
+        &-lg-from-lg {
             margin-top: 120px;
         }
     }
@@ -160,7 +180,7 @@ img {
     @include media-xl {
         &__desc {
             font-size: 20px;
-            line-height: 28px;
+            line-height: 30px;
         }
 
         &__btn-wrap {
@@ -187,8 +207,7 @@ img {
         }
 
         &::before {
-
-            background: url("/img/decor-bcg-elem.png") center repeat;
+            background: url("@img/decor-bcg-elem.png") center repeat;
             background-position: 78% 13%;
             background-size: 104px;
             opacity: 0.8;
@@ -202,14 +221,14 @@ img {
             &::before,
             &::after {
                 height: 60%;
-                // right: auto;
-                // left: 50%;
-                // transform: translateX(-50%);
-                // width: 100vw;
+            }
+
+            &::before {
+                opacity: 0.6;
             }
 
             &::after {
-                background: linear-gradient(to top, rgba(255,255,255,1) 0%, rgba(255,255,255,.7) 20%, rgba(255,255,255,.7) 80%, rgba(255,255,255,1) 100%), linear-gradient(to right, rgba(255,255,255,.8) 0%, rgba(255,255,255,.8) 15%, rgba(255,255,255,.4) 20%, rgba(255,255,255,.4) 20.3%, rgba(255,255,255,.8) 22%, rgba(255,255,255,.8) 76%, rgba(255,255,255,.4) 81%, rgba(255,255,255,.4) 79.2%, rgba(255,255,255,.8) 80%, rgba(255,255,255,1) 100%);
+                background: linear-gradient(to top, rgba(255,255,255,1) 0%, rgba(255,255,255,.7) 20%, rgba(255,255,255,.7) 80%, rgba(255,255,255,1) 100%), linear-gradient(to right, rgba(255,255,255,.8) 0%, rgba(255,255,255,.8) 15%, rgba(255,255,255,.5) 20%, rgba(255,255,255,.5) 20.3%, rgba(255,255,255,.8) 22%, rgba(255,255,255,.8) 78%, rgba(255,255,255,.5) 79.7%, rgba(255,255,255,.5) 80%, rgba(255,255,255,.8) 85%, rgba(255,255,255,.8) 100%);
             }
         }
 
@@ -235,16 +254,79 @@ img {
         }
 
         &::before {
-
-            background: url("/img/decor-bcg-elem.png") center repeat;
+            background: url("@img/decor-bcg-elem.png") center repeat;
             background-position: 78% 13%;
             background-size: 104px;
-            opacity: 0.15;
+            opacity: 0.6;
+            -webkit-mask-image: linear-gradient(180deg, transparent 2%, black);
         }
 
         &::after {
-            // background: linear-gradient(to top, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 20%, rgba(255,255,255,0) 80%, rgba(255,255,255,1) 100%), linear-gradient(to right, rgba(255,255,255,.95) 0%, rgba(255,255,255,.93) 10%, rgba(255,255,255,.93) 90%, rgba(255,255,255,.9) 100%) ;
-            background: linear-gradient(135deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 20%, rgba(255,255,255,0) 80%, rgba(255,255,255,0) 100%) ;
+            display: none;
+        }
+
+        @include media-lg {
+            &::before,
+            &::after {
+                height: 450px;
+            }
+
+            &::before {
+                opacity: .3;
+                -webkit-mask-image: none;
+            }
+
+            &::after {
+                display: block;
+                background: linear-gradient(to top, rgba(255,255,255,0), rgba(255,255,255,1)), linear-gradient(to right, rgba(255,255,255,.8) 0%, rgba(255,255,255,.8) 15%, rgba(255,255,255,.5) 20%, rgba(255,255,255,.5) 20.3%, rgba(255,255,255,.8) 22%, rgba(255,255,255,.8) 78%, rgba(255,255,255,.5) 79.7%, rgba(255,255,255,.5) 80%, rgba(255,255,255,.8) 85%, rgba(255,255,255,.8) 100%);
+            }
+        }
+
+        @include media-xl {
+            &::before,
+            &::after {
+                height: 510px;
+            }
+
+            &::before {
+                opacity: .3;
+            }
+        }
+    }
+
+    @include media-lg {
+        &--content {
+            &::before,
+            &::after {
+                content: '';
+                display: block;
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                right: auto;
+                left: 50%;
+                transform: translateX(-50%);
+                width: 100vw;
+                z-index: -1;
+            }
+
+            &::before {
+                background: url("@img/decor-bcg-elem.png") center repeat;
+                background-position: 78% 13%;
+                background-size: 104px;
+                opacity: 0.18;
+            }
+
+            &::after {
+                background: linear-gradient(to top, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 25%, rgba(255,255,255,0) 75%, rgba(255,255,255,1) 100%), linear-gradient(to right, rgba(255,255,255,.8) 0%, rgba(255,255,255,.8) 15%, rgba(255,255,255,.5) 20%, rgba(255,255,255,.5) 20.3%, rgba(255,255,255,.8) 22%, rgba(255,255,255,.8) 78%, rgba(255,255,255,.5) 79.7%, rgba(255,255,255,.5) 80%, rgba(255,255,255,.8) 85%, rgba(255,255,255,.8) 100%);
+            }
+        }
+
+        &--content-btm-down {
+            &::before,
+            &::after {
+                bottom: -20%;
+            }
         }
     }
 }

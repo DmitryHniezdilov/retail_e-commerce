@@ -31,7 +31,7 @@
         color: #ECECEC;
     }
 
-    @include media-xs {
+    @include media-sm {
         &__img {
             object-position: -20px 100%;
         }

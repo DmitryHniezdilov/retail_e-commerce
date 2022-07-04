@@ -2,7 +2,7 @@ import replace from "gulp-replace";
 import plumber from "gulp-plumber";
 import notify from "gulp-notify";
 import browsersync from "browser-sync";
-import newer from "gulp-newer"; // Проверка обновления изображений
+import newer from "gulp-newer"; // Check reload images
 import ifPlugin from "gulp-if";
 
 export const plugins =  {

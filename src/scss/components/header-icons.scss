@@ -12,16 +12,6 @@
             margin-left: 20px;
         }
 
-        &--cart {
-            
-        }
-        &--heart {
-
-        }
-        &--profile {
-
-        }
-
         @include media-to-md {
             &:not(:first-child) {
                 display: none;
@@ -32,8 +22,5 @@
             width: 20px;
             height: 18px;
         }
-    }
-
-    &__icon {
     }
 }
