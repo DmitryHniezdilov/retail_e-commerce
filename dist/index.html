@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="css/style.min.css?_v=20220705161455">
     <title>Index page e-commerce</title>
-    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:200,200italic,300,300italic,regular,italic,600,600italic,700,700italic,800,800italic,900,900italic" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:200,200italic,300,300italic,regular,italic,600,600italic,700,700italic,800,800italic,900,900italic&_v=20220705161455" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic&_v=20220705161455" rel="stylesheet" />
 </head>
 
     <body>
@@ -18,7 +18,7 @@
         <div class="header__inner">
             <div class="header__search-wrap">
                 <div class="search">
-    <button class="search__btn">
+    <button class="search__btn" aria-hidden="true">
         <svg class="search__icon icon">
             <use xlink:href="#icon-search"></use>
         </svg>
@@ -60,7 +60,7 @@
                             </ul>
                             <div class="header__nav-drop-search">
                                 <div class="search">
-    <button class="search__btn">
+    <button class="search__btn" aria-hidden="true">
         <svg class="search__icon icon">
             <use xlink:href="#icon-search"></use>
         </svg>
@@ -80,18 +80,18 @@
             </div>
             <div class="header__icons-wrap">
                 <div class="header-icons">
-    <button class="header-icons__btn header-icons__btn--cart" type="button">
-        <svg class="header-icons__icon icon">
+    <button class="header-icons__btn header-icons__btn--cart" type="button" aria-label="open shopping cart">
+        <svg class="header-icons__icon icon" aria-hidden="true">
             <use xlink:href="#icon-cart"></use>
         </svg>
     </button>
-    <button class="header-icons__btn header-icons__btn--heart" type="button">
-        <svg class="header-icons__icon icon">
+    <button class="header-icons__btn header-icons__btn--heart" type="button" aria-label="open favorites products">
+        <svg class="header-icons__icon icon" aria-hidden="true">
             <use xlink:href="#icon-heart"></use>
         </svg>
     </button>
-    <button class="header-icons__btn header-icons__btn--profile" type="button">
-        <svg class="header-icons__icon icon">
+    <button class="header-icons__btn header-icons__btn--profile" type="button" aria-label="open your profile">
+        <svg class="header-icons__icon icon" aria-hidden="true">
             <use xlink:href="#icon-profile"></use>
         </svg>
     </button>
@@ -105,7 +105,7 @@
 
                 <div class="banner-main decor-bcg decor-bcg--top">
                     <div class="banner-main__img-box">
-                        <img class="banner-main__img" src="img/banner-main-bcg.jpg" alt="main banner background"></img>
+                        <picture><source srcset="img/banner-main-bcg.webp" type="image/webp"><img class="banner-main__img" src="img/banner-main-bcg.jpg" alt="main banner background"></picture></img>
                     </div>
                     <div class="banner-main__inner center">
                         <div class="banner-main__text-wrap">
@@ -130,7 +130,7 @@
                             <div class="slider-products__slide-wrap">
                                 <a href="#" class="slider-products__slide-link">
                                     <div class="slider-products__img-box">
-                                        <img class="slider-products__img" src="img/product-bathroom-tiles.jpg" alt="product bathroom tiles"></img>
+                                        <picture><source srcset="img/product-bathroom-tiles.webp" type="image/webp"><img class="slider-products__img" src="img/product-bathroom-tiles.jpg" alt="product bathroom tiles"></picture></img>
                                     </div>
                                     <div class="slider-products__text-wrap">
                                         <h5 class="slider-products__title">Bathroom Tiles</h5>
@@ -141,7 +141,7 @@
                             <div class="slider-products__slide-wrap">
                                 <a href="#" class="slider-products__slide-link">
                                     <div class="slider-products__img-box">
-                                        <img class="slider-products__img" src="img/product-marble.jpg" alt="product marble"></img>
+                                        <picture><source srcset="img/product-marble.webp" type="image/webp"><img class="slider-products__img" src="img/product-marble.jpg" alt="product marble"></picture></img>
                                     </div>
                                     <div class="slider-products__text-wrap">
                                         <h5 class="slider-products__title">Marble</h5>
@@ -152,7 +152,7 @@
                             <div class="slider-products__slide-wrap">
                                 <a href="#" class="slider-products__slide-link">
                                     <div class="slider-products__img-box">
-                                        <img class="slider-products__img" src="img/product-out-flooring.jpg" alt="product Outdoor Flooring"></img>
+                                        <picture><source srcset="img/product-out-flooring.webp" type="image/webp"><img class="slider-products__img" src="img/product-out-flooring.jpg" alt="product Outdoor Flooring"></picture></img>
                                     </div>
                                     <div class="slider-products__text-wrap">
                                         <h5 class="slider-products__title">Outdoor Flooring</h5>
@@ -163,7 +163,7 @@
                             <div class="slider-products__slide-wrap">
                                 <a href="#" class="slider-products__slide-link">
                                     <div class="slider-products__img-box">
-                                        <img class="slider-products__img" src="img/product-kitchen-interior.jpg" alt="product Kitchen Interior"></img>
+                                        <picture><source srcset="img/product-kitchen-interior.webp" type="image/webp"><img class="slider-products__img" src="img/product-kitchen-interior.jpg" alt="product Kitchen Interior"></picture></img>
                                     </div>
                                     <div class="slider-products__text-wrap">
                                         <h5 class="slider-products__title">Kitchen Interior</h5>
@@ -187,7 +187,7 @@
                             </div>
                         </div>
                         <div class="banner-index__img-box">
-                            <img class="banner-index__img" src="img/img-banner-index-1.jpg" alt="img-banner-index-1"></img>
+                            <picture><source srcset="img/img-banner-index-1.webp" type="image/webp"><img class="banner-index__img" src="img/img-banner-index-1.jpg" alt="img-banner-index-1"></picture></img>
                         </div>
                     </div>
                 </div>
@@ -202,17 +202,17 @@
                             <div class="js-slider-solutions slider-solutions__slick slider-elements slider-elements--arrows">
                                 <div class="slider-solutions__slide-wrap">
                                     <a href="#" class="slider-solutions__link">
-                                        <img class="slider-solutions__img" src="img/solution-1.jpg" alt="solution 1"></img>
+                                        <picture><source srcset="img/solution-1.webp" type="image/webp"><img class="slider-solutions__img" src="img/solution-1.jpg" alt="solution 1"></picture></img>
                                     </a>
                                 </div>
                                 <div class="slider-solutions__slide-wrap">
                                     <a href="#" class="slider-solutions__link">
-                                        <img class="slider-solutions__img" src="img/solution-2.jpg" alt="solution 2"></img>
+                                        <picture><source srcset="img/solution-2.webp" type="image/webp"><img class="slider-solutions__img" src="img/solution-2.jpg" alt="solution 2"></picture></img>
                                     </a>
                                 </div>
                                 <div class="slider-solutions__slide-wrap">
                                     <a href="#" class="slider-solutions__link">
-                                        <img class="slider-solutions__img" src="img/solution-3.jpg" alt="solution 3"></img>
+                                        <picture><source srcset="img/solution-3.webp" type="image/webp"><img class="slider-solutions__img" src="img/solution-3.jpg" alt="solution 3"></picture></img>
                                     </a>
                                 </div>
                             </div>
@@ -223,10 +223,10 @@
                     </div>
                     <div class="solutions__right">
                         <div class="solutions__video-wrap">
-                            <img class="solutions__video-bcg" src="img/solution-video-bcg.jpg" alt="solution 3"></img>
+                            <picture><source srcset="img/solution-video-bcg.webp" type="image/webp"><img class="solutions__video-bcg" src="img/solution-video-bcg.jpg" alt="solution 3"></picture></img>
                             <div class="solutions__video-title-wrap">
                                 <div class="solutions__video-icon-wrap">
-                                    <svg class="solutions__video-icon icon">
+                                    <svg class="solutions__video-icon icon" aria-hidden="true">
                                         <use xlink:href="#icon-play"></use>
                                     </svg>
                                 </div>
@@ -250,7 +250,7 @@
                             <div class="slider-projects__slide-wrap">
                                 <a href="#" class="slider-projects__slide-link">
                                     <div class="slider-projects__img-box">
-                                        <img class="slider-projects__img" src="img/project-kingdom-tower.jpg" alt="project Kingdom Tower"></img>
+                                        <picture><source srcset="img/project-kingdom-tower.webp" type="image/webp"><img class="slider-projects__img" src="img/project-kingdom-tower.jpg" alt="project Kingdom Tower"></picture></img>
                                     </div>
                                     <h5>Kingdom Tower</h5>
                                     <p class="slider-projects__desc">Marble Flooring</p>
@@ -259,7 +259,7 @@
                             <div class="slider-projects__slide-wrap">
                                 <a href="#" class="slider-projects__slide-link">
                                     <div class="slider-projects__img-box">
-                                        <img class="slider-projects__img" src="img/project-dubai-mall.jpg" alt="project Dubai mall"></img>
+                                        <picture><source srcset="img/project-dubai-mall.webp" type="image/webp"><img class="slider-projects__img" src="img/project-dubai-mall.jpg" alt="project Dubai mall"></picture></img>
                                     </div>
                                     <h5>Dubai mall</h5>
                                     <p class="slider-projects__desc">Wood Flooring</p>
@@ -268,7 +268,7 @@
                             <div class="slider-projects__slide-wrap">
                                 <a href="#" class="slider-projects__slide-link">
                                     <div class="slider-projects__img-box">
-                                        <img class="slider-projects__img" src="img/project-king-road.jpg" alt="project King Road Offices"></img>
+                                        <picture><source srcset="img/project-king-road.webp" type="image/webp"><img class="slider-projects__img" src="img/project-king-road.jpg" alt="project King Road Offices"></picture></img>
                                     </div>
                                     <h5>King Road Offices</h5>
                                     <p class="slider-projects__desc">Outdoor Flooring</p>
@@ -277,7 +277,7 @@
                             <div class="slider-projects__slide-wrap">
                                 <a href="#" class="slider-projects__slide-link">
                                     <div class="slider-projects__img-box">
-                                        <img class="slider-projects__img" src="img/project-beach-tower.jpg" alt="project Beach Tower Alupang"></img>
+                                        <picture><source srcset="img/project-beach-tower.webp" type="image/webp"><img class="slider-projects__img" src="img/project-beach-tower.jpg" alt="project Beach Tower Alupang"></picture></img>
                                     </div>
                                     <h5>Beach Tower Alupang</h5>
                                     <p class="slider-projects__desc">Wood Flooring</p>                                    
@@ -301,7 +301,7 @@
                             <div class="collections__item">
                                 <a href="#" class="collections__link">
                                     <div class="collections__img-wrap">
-                                        <img class="collections__img" src="img/tile-zurich-vision.jpg" alt="tile zurich vision"></img>
+                                        <picture><source srcset="img/tile-zurich-vision.webp" type="image/webp"><img class="collections__img" src="img/tile-zurich-vision.jpg" alt="tile zurich vision"></picture></img>
                                     </div>
                                     <div class="collections__desc-wrap">
                                         <p class="collections__title">Zurich Vision 60×60</p>
@@ -315,7 +315,7 @@
                             <div class="collections__item">
                                 <a href="#" class="collections__link">
                                     <div class="collections__img-wrap">
-                                        <img class="collections__img" src="img/tile-zurich-pearl.jpg" alt="tile zurich pearl"></img>
+                                        <picture><source srcset="img/tile-zurich-pearl.webp" type="image/webp"><img class="collections__img" src="img/tile-zurich-pearl.jpg" alt="tile zurich pearl"></picture></img>
                                     </div>
                                     <div class="collections__desc-wrap">
                                         <p class="collections__title">Zurich Pearl 60×60</p>
@@ -329,7 +329,7 @@
                             <div class="collections__item">
                                 <a href="#" class="collections__link">
                                     <div class="collections__img-wrap">
-                                        <img class="collections__img" src="img/tile-zurich-grey.jpg" alt="tile zurich grey"></img>
+                                        <picture><source srcset="img/tile-zurich-grey.webp" type="image/webp"><img class="collections__img" src="img/tile-zurich-grey.jpg" alt="tile zurich grey"></picture></img>
                                     </div>
                                     <div class="collections__desc-wrap">
                                         <p class="collections__title">Zurich Grey 60×60</p>
@@ -343,7 +343,7 @@
                             <div class="collections__item">
                                 <a href="#" class="collections__link">
                                     <div class="collections__img-wrap">
-                                        <img class="collections__img" src="img/tile-zurich-dark-grey.jpg" alt="tile zurich dark grey"></img>
+                                        <picture><source srcset="img/tile-zurich-dark-grey.webp" type="image/webp"><img class="collections__img" src="img/tile-zurich-dark-grey.jpg" alt="tile zurich dark grey"></picture></img>
                                     </div>
                                     <div class="collections__desc-wrap">
                                         <p class="collections__title">Zurich Dark Grey 60×60</p>
@@ -357,7 +357,7 @@
                             <div class="collections__item">
                                 <a href="#" class="collections__link">
                                     <div class="collections__img-wrap">
-                                        <img class="collections__img" src="img/tile-windsor-white-oak.jpg" alt="tile windsor white oak"></img>
+                                        <picture><source srcset="img/tile-windsor-white-oak.webp" type="image/webp"><img class="collections__img" src="img/tile-windsor-white-oak.jpg" alt="tile windsor white oak"></picture></img>
                                     </div>
                                     <div class="collections__desc-wrap">
                                         <p class="collections__title">Windsor White Oak</p>
@@ -371,7 +371,7 @@
                             <div class="collections__item">
                                 <a href="#" class="collections__link">
                                     <div class="collections__img-wrap">
-                                        <img class="collections__img" src="img/tile-sicily-grey-decor.jpg" alt="tile sicily grey decor"></img>
+                                        <picture><source srcset="img/tile-sicily-grey-decor.webp" type="image/webp"><img class="collections__img" src="img/tile-sicily-grey-decor.jpg" alt="tile sicily grey decor"></picture></img>
                                     </div>
                                     <div class="collections__desc-wrap">
                                         <p class="collections__title">Sicily Grey Décor 30×60</p>
@@ -385,7 +385,7 @@
                             <div class="collections__item">
                                 <a href="#" class="collections__link">
                                     <div class="collections__img-wrap">
-                                        <img class="collections__img" src="img/tile-sardinia-white.jpg" alt="tile sardinia white"></img>
+                                        <picture><source srcset="img/tile-sardinia-white.webp" type="image/webp"><img class="collections__img" src="img/tile-sardinia-white.jpg" alt="tile sardinia white"></picture></img>
                                     </div>
                                     <div class="collections__desc-wrap">
                                         <p class="collections__title">Sardinia White</p>
@@ -399,7 +399,7 @@
                             <div class="collections__item">
                                 <a href="#" class="collections__link">
                                     <div class="collections__img-wrap">
-                                        <img class="collections__img" src="img/tile-sicily-grey.jpg" alt="tile sicily grey"></img>
+                                        <picture><source srcset="img/tile-sicily-grey.webp" type="image/webp"><img class="collections__img" src="img/tile-sicily-grey.jpg" alt="tile sicily grey"></picture></img>
                                     </div>
                                     <div class="collections__desc-wrap">
                                         <p class="collections__title">Sicily Grey 30×60</p>
@@ -432,7 +432,7 @@
                             </div>
                         </div>
                         <div class="banner-index__img-box">
-                            <img class="banner-index__img" src="img/img-banner-index-2.jpg" alt="img-banner-index-2"></img>
+                            <picture><source srcset="img/img-banner-index-2.webp" type="image/webp"><img class="banner-index__img" src="img/img-banner-index-2.jpg" alt="img-banner-index-2"></picture></img>
                         </div>
                     </div>
                 </div>
@@ -503,21 +503,21 @@
                 <ul class="socials">
     <li class="socials__item">
         <a href="#" class="socials__link socials__link--fb" aria-label="socials link facebook">
-            <svg class="socials__icon icon">
+            <svg class="socials__icon icon" aria-hidden="true">
                 <use xlink:href="#social-fb"></use>
             </svg>
         </a>
     </li>
     <li class="socials__item">
         <a href="#" class="socials__link socials__link--tw" aria-label="socials link twitter">
-            <svg class="socials__icon icon">
+            <svg class="socials__icon icon" aria-hidden="true">
                 <use xlink:href="#social-tw"></use>
             </svg>
         </a>
     </li>
     <li class="socials__item">
         <a href="#" class="socials__link socials__link--in" aria-label="socials link linkedin">
-            <svg class="socials__icon icon">
+            <svg class="socials__icon icon" aria-hidden="true">
                 <use xlink:href="#social-in"></use>
             </svg>
         </a>
