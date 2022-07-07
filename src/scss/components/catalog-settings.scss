@@ -1,0 +1,25 @@
+.catalog-settings {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-between;
+
+    &__label {
+    }
+
+    &__label-info {
+        font-size: 15px;
+        line-height: 28px;
+        color: #808080;
+    }
+
+    &__sorting {
+        margin: 0;
+        display: flex;
+        flex-flow: row nowrap;
+        list-style: none;
+    }
+
+    &__sorting-item {
+    }
+}

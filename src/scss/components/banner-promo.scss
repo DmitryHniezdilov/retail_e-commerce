@@ -1,41 +1,51 @@
-.banner-main {
+.banner-promo {
+    position: relative;
+    z-index: 2;
+
     &__img-box {
-        height: 455px;
+        height: 232px;
+        margin-right: -$width-gap-gorizontal;
+        margin-left: -$width-gap-gorizontal;
         position: relative;
         z-index: -1;
-        background-color: #949ba2;
+        background-color: transparent;
     }
 
     &__img {
         width: 100%;
         height: 100%;
         object-fit: cover;
-        object-position: -152px 50%;
+        object-position: 100% 0%;
+        clip-path: polygon(0 35px, 100% 0, 100% 100%, 0 100%);
     }
 
-    &__text-wrap {
+    &__paper {
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.13));
+    }
+
+    &__paper-inner {
         margin-top: -30px;
-        padding: 27px 20px 32px;
-        background-color: #666A6F;
+        margin-bottom: -24px;
+        padding: 27px 20px 20px;
+        background-color: $color-bg;
+        clip-path: polygon(0 0, 100% 0, 100% calc(100% - 32px), 0 100%);
     }
 
     &__title {
-        color: $color-text-banner;
+        margin-bottom: 10px;
+        font-family: $font-title;
+        font-weight: 400;
+        line-height: 1.2;
     }
 
-    &__desc {
-        margin-bottom: 14px;
+    &__text {
         font-weight: 400;
         font-size: 18px;
         line-height: 28px;
-        color: #ECECEC;
+        color: $color-text-secondary;
     }
 
     @include media-sm {
-        &__img {
-            object-position: -20px 100%;
-        }
-
         &__title {
             font-size: 30px;
         }
@@ -44,79 +54,60 @@
     @include media-lg {
         position: relative;
 
-        &__inner {
-            position: absolute;
-            top: 50%;
-            right: 0;
-            width: 50%;
-            width: calc(50% + 20px);
-            max-width: 760px;
-            max-height: 420px;
-            transform: translateY(-50%);
+        &__center {
+            display: flex;
+            flex-flow: row nowrap;
+            align-items: stretch;
+            height: 232px;
+        }
+
+        &__paper {
+            flex: 0 0 50%;
+            max-width: 572px;
+        }
+
+        &__paper-inner {
+            margin: 0;
+            height: 100%;
+            padding: 20px 70px 20px 20px;
+            display: flex;
+            flex-flow: column wrap;
+            justify-content: center;
+            clip-path: polygon(0 0, 100% 0, calc(100% - 90px) 100%, 0 100%);
+        }
+
+        &__img-box {
+            flex: 1;
+            margin: 0 0 0 -80px;
+            filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+        }
+
+        &__img {
+            clip-path: polygon(90px 0, 100% 0, 100% 100%, 0 100%);
+        }
+
+        &__title {
+            font-size: 34px;
+        }
+
+        &__text {
+            display: -webkit-box;
+            line-clamp: 3;
+            -webkit-line-clamp: 3;
+            box-orient: vertical;
+            -webkit-box-orient: vertical;
             overflow: hidden;
-        }
-
-        &__img {
-            object-position: -100px 100%;
-        }
-
-        &__text-wrap {
-            margin-top: 0;
-            padding: 35px 30px 41px;
-
-            @supports (backdrop-filter: blur()) {
-                background-color: rgba(0, 0, 0, 0.36);
-                backdrop-filter: blur(34px);
-            }
-        }
-
-        &__desc {
-            margin-bottom: 23px;
-        }
-    }
-
-    @media (min-width: 1100px) {
-        &__img {
-            object-position: 0 100%;
         }
     }
 
     @include media-xl {
-        height: 526px;
-
-        &__img-box {
-            height: 100%;
-        }
-
-        &__text-wrap {
-            padding: 45px 35px 51px;
-        }
-
         &__title {
-            margin-bottom: 26px;
-            font-size: 44px;
-            line-height: 1;
+            font-size: 40px;
+            line-height: 60px;
         }
 
-        &__desc {
-            margin-bottom: 57px;
+        &__text {
             font-size: 20px;
-        }
-
-    }
-
-    @include media-content {
-        &__inner {
-            position: absolute;
-            right: calc(50% - 740px);
-        }
-
-        &__text-wrap {
-            padding: 56px 40px 51px;
-        }
-
-        &__title {
-            font-size: 48px;
         }
     }
 }

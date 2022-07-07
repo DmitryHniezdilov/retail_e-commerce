@@ -1,4 +1,4 @@
-.collections {
+.catalog {
     margin-top: 28px;
 
     &__list {
@@ -6,12 +6,12 @@
         display: flex;
         flex-flow: row wrap;
         justify-content: space-around;
-
     }
 
     &__item {
         padding: 15px;
-        flex: 0 1 50%;
+        max-width: 430px;
+        flex: 0 1 100%;
     }
 
     &__link {
@@ -93,6 +93,12 @@
 
     &__btn-wrap {
         margin-top: 40px;
+    }
+
+    @include media-sm {
+        &__item {
+            flex: 0 1 50%;
+        }   
     }
 
     @include media-md {

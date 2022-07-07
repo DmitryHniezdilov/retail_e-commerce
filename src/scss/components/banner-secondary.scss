@@ -74,7 +74,6 @@
     }
 
     @include media-lg {
-
         &__inner {
             top: 47%;
         }
@@ -121,11 +120,9 @@
             max-width: 680px;
             font-size: 20px;
         }
-
     }
 
     @include media-content {
-
         &__inner {
             top: 43%;
             left: 50%;
