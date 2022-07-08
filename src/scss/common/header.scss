@@ -1,8 +1,5 @@
 .header {
 
-    &__center {
-    }
-
     &__inner {
         display: flex;
         flex-flow: row nowrap;
@@ -14,9 +11,6 @@
 
     &__search-wrap {
         display: none;
-    }
-
-    &__drop-wrap {
     }
 
     &__logo-wrap {
@@ -104,10 +98,7 @@
         height: 12px;
         background: transparent;
         border: none;
-    }
-
-    &__button-mob-icon {
-
+        cursor: pointer;
     }
 
     &__logo {

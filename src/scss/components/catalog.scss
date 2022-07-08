@@ -93,6 +93,10 @@
 
     &__btn-wrap {
         margin-top: 40px;
+
+        &--top-enlg {
+            margin-top: 60px;
+        }
     }
 
     @include media-sm {
@@ -118,6 +122,12 @@
 
             &:nth-last-child(-n+2) {
                 display: block;
+            }
+        }
+
+        &__btn-wrap {
+            &--top-enlg {
+                margin-top: 80px;
             }
         }
     }
@@ -151,6 +161,10 @@
 
         &__btn-wrap {
             margin-top: 50px;
+
+            &--top-enlg {
+                margin-top: 100px;
+            }
         }
     }
 }

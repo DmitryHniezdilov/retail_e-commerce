@@ -22,22 +22,69 @@
                 </div>
 
                 <section class="content-center center gap-xs">
-                    <div class="catalog-settings">
+                    <div class="catalog-settings hide-to-lg">
                         <div class="catalog-settings__label">
                             <p class="catalog-settings__label-info">Showing <span>1</span> - <span>15</span> of <span>22</span> results</p>
                         </div>
                         <ul class="catalog-settings__sorting">
                             <li class="catalog-settings__sorting-item">
-                                
+                                <button class="catalog-settings__btn-filter" aria-hidden="true">
+                                    <span>Filter</span>
+                                    <svg class="catalog-settings__icon-filter icon">
+                                        <use xlink:href="#icon-filter"></use>
+                                    </svg>
+                                </button>
                             </li>
-                            <li class="catalog-settings__sorting-item">
-
+                            <li class="catalog-settings__sorting-item catalog-settings__sorting-item--select">
+                                <select class="catalog-settings__select select">
+                                    <option value="1: expensive" class="select__option">Sort by Price</option>
+                                    <option value="2: popularity" class="select__option">Sort by Popular</option>
+                                    <option value="3: rating" class="select__option">Sort by Rating</option>
+                                    <option value="4: novelty" class="select__option">Novelty</option>
+                                    <option value="5: promotional" class="select__option">Promotional</option>
+                                </select>
                             </li>
-                            <li class="catalog-settings__sorting-item">
+                            <li class="catalog-settings__sorting-item catalog-settings__sorting-item--search">
                                 @@include('./html/components/search.html')
                             </li>
-                            <li class="catalog-settings__sorting-item">
-
+                            <li class="catalog-settings__sorting-item catalog-settings__sorting-item--display">
+                                <ul class="catalog-settings__display-list">
+                                    <li class="catalog-settings__display-item">
+                                        <button class="catalog-settings__display-btn" aria-hidden="true">
+                                            <svg class="catalog-settings__icon catalog-settings__icon--display icon">
+                                                <use xlink:href="#icon-display-1"></use>
+                                            </svg>
+                                        </button>
+                                    </li>
+                                    <li class="catalog-settings__display-item">
+                                        <button class="catalog-settings__display-btn" aria-hidden="true">
+                                            <svg class="catalog-settings__icon catalog-settings__icon--display icon">
+                                                <use xlink:href="#icon-display-2"></use>
+                                            </svg>
+                                        </button>
+                                    </li>
+                                    <li class="catalog-settings__display-item">
+                                        <button class="catalog-settings__display-btn" aria-hidden="true">
+                                            <svg class="catalog-settings__icon catalog-settings__icon--display icon">
+                                                <use xlink:href="#icon-display-3"></use>
+                                            </svg>
+                                        </button>
+                                    </li>
+                                    <li class="catalog-settings__display-item">
+                                        <button class="catalog-settings__display-btn" aria-hidden="true">
+                                            <svg class="catalog-settings__icon catalog-settings__icon--display icon">
+                                                <use xlink:href="#icon-display-4"></use>
+                                            </svg>
+                                        </button>
+                                    </li>
+                                    <li class="catalog-settings__display-item">
+                                        <button class="catalog-settings__display-btn" aria-hidden="true">
+                                            <svg class="catalog-settings__icon catalog-settings__icon--display icon">
+                                                <use xlink:href="#icon-display-5"></use>
+                                            </svg>
+                                        </button>
+                                    </li>
+                                </ul>
                             </li>
                         </ul>
                     </div>
@@ -156,7 +203,7 @@
                                 </a>
                             </div>
                         </div>
-                        <div class="catalog__btn-wrap">
+                        <div class="catalog__btn-wrap catalog__btn-wrap--top-enlg">
                             <a href="#" class="btn">Load More</a>
                         </div>
                     </div>
