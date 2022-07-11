@@ -8,7 +8,7 @@ In the project directory, you can run:
 
 ***
 
-Website Design [Retail E-Commerce](https://www.figma.com/file/NYFEsgl93QQTaiqyuyCxHx/Retail-E-Commerce-Website-Design-(Community)?node-id=3%3A447).
+Website Design [Retail E-Commerce](https://www.figma.com/community/file/1109428696575110692).
 
 ***
 
