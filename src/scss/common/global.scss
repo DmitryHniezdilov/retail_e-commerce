@@ -94,6 +94,10 @@ img {
         margin-top: 39px;
     }
 
+    &-sm {
+        margin-top: 40px; 
+    }
+
     &-md {
         margin-top: 45px;
     }
@@ -113,6 +117,10 @@ img {
             margin-top: 60px;
         }
 
+        &-sm {
+            margin-top: 70px; 
+        }
+
         &-lg,
         &-lg-from-lg {
             margin-top: 90px;
@@ -126,6 +134,10 @@ img {
     @include media-xl {
         &-xs {
             margin-top: 80px;
+        }
+
+        &-sm {
+            margin-top: 100px; 
         }
 
         &-md {

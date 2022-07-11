@@ -735,6 +735,10 @@ img {
   margin-top: 39px;
 }
 
+.gap-sm {
+  margin-top: 40px;
+}
+
 .gap-md {
   margin-top: 45px;
 }
@@ -1901,6 +1905,179 @@ img {
   display: block;
 }
 
+.slider-catalog {
+  position: relative;
+  z-index: 1;
+  font-size: 0;
+  margin-right: -10px;
+  margin-left: -10px;
+}
+
+.slider-catalog__img-box {
+  position: relative;
+  width: 100%;
+  max-height: 400px;
+}
+
+.slider-catalog__img-box::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(0, rgba(0, 0, 0, 0.45)), to(rgba(196, 196, 196, 0)));
+  background: -o-linear-gradient(bottom, rgba(0, 0, 0, 0.45) 0, rgba(196, 196, 196, 0) 100%);
+  background: linear-gradient(360deg, rgba(0, 0, 0, 0.45) 0, rgba(196, 196, 196, 0) 100%);
+}
+
+.slider-catalog__img {
+  width: 100%;
+  height: 100%;
+  max-height: 400px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.slider-catalog__title-wrap {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 20px 28px;
+  max-height: 50%;
+  overflow: hidden;
+}
+
+.slider-catalog__subtitle {
+  margin-bottom: 1px;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 28px;
+  text-transform: capitalize;
+  color: #fff;
+}
+
+.slider-catalog__subtitle--hov {
+  margin-bottom: 9px;
+}
+
+.slider-catalog__title {
+  margin-bottom: 6px;
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 25px;
+  text-transform: capitalize;
+  color: #fff;
+}
+
+.slider-catalog__title--hov {
+  margin-bottom: 23px;
+}
+
+.slider-catalog__desc {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28px;
+  text-transform: capitalize;
+  color: #BCBCBC;
+  display: -webkit-box;
+  line-clamp: 2;
+  -webkit-line-clamp: 2;
+  box-orient: vertical;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.slider-catalog__desc--hov {
+  line-clamp: 6;
+  -webkit-line-clamp: 6;
+}
+
+.slider-catalog__hover-wrap {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 30px 28px;
+  overflow: hidden;
+  background-color: #252525;
+  opacity: 0;
+  -webkit-transform: scale(0.2);
+      -ms-transform: scale(0.2);
+          transform: scale(0.2);
+  -webkit-transition: all 0.25s ease;
+  -o-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+}
+
+.slider-catalog__slick {
+  max-width: 420px;
+  margin: -10px auto;
+}
+
+.slider-catalog__slick .slick-arrow {
+  top: 175px;
+}
+
+.slider-catalog__slick:not(.slick-initialized) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 370px;
+}
+
+.slider-catalog__slick:not(.slick-initialized) > * {
+  display: none;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.slider-catalog__slick:not(.slick-initialized) > *:nth-child(1) {
+  display: block;
+}
+
+.slider-catalog__slide-wrap {
+  font-size: 0;
+  padding: 10px;
+}
+
+.slider-catalog__slide-link {
+  display: inline-block;
+  width: 100%;
+  position: relative;
+  text-decoration: none;
+  color: #111010;
+  -webkit-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.2s;
+  font-size: 0;
+}
+
+.slider-catalog__slide-link:hover,
+.slider-catalog__slide-link:focus,
+.slider-catalog__slide-link:active {
+  outline: none;
+}
+
+.slider-catalog__slide-link:hover .slider-catalog__hover-wrap,
+.slider-catalog__slide-link:focus .slider-catalog__hover-wrap,
+.slider-catalog__slide-link:active .slider-catalog__hover-wrap {
+  opacity: 1;
+  -webkit-transform: scale(1);
+      -ms-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: all 0.25s ease;
+  -o-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+}
+
 .catalog {
   margin-top: 28px;
 }
@@ -2338,6 +2515,18 @@ img {
     padding-left: 15px;
   }
 
+  .slider-catalog__slick {
+    max-width: none;
+  }
+
+  .slider-catalog__slick:not(.slick-initialized) {
+    height: 345px;
+  }
+
+  .slider-catalog__slick:not(.slick-initialized) > *:nth-child(2) {
+    display: block;
+  }
+
   .catalog__item {
     -webkit-box-flex: 0;
         -ms-flex: 0 1 50%;
@@ -2465,6 +2654,32 @@ img {
     padding: 10px 15px;
   }
 
+  .slider-catalog__desc--hov {
+    line-clamp: 5;
+    -webkit-line-clamp: 5;
+  }
+
+  .slider-catalog__slick {
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .slider-catalog__slick:not(.slick-initialized) {
+    height: 305px;
+  }
+
+  .slider-catalog__slick:not(.slick-initialized) > *:nth-child(3) {
+    display: block;
+  }
+
+  .slider-catalog__slick .slick-arrow {
+    top: 150px;
+  }
+
+  .slider-catalog__slide-wrap {
+    padding: 10px 15px;
+  }
+
   .catalog__item {
     -webkit-box-flex: 0;
         -ms-flex: 0 1 33.3%;
@@ -2479,6 +2694,10 @@ img {
 @media only screen and (min-width: 1024px) {
   .gap-xs {
     margin-top: 60px;
+  }
+
+  .gap-sm {
+    margin-top: 70px;
   }
 
   .gap-lg,
@@ -2795,6 +3014,14 @@ img {
     display: block;
   }
 
+  .slider-catalog__slick:not(.slick-initialized) {
+    height: 390px;
+  }
+
+  .slider-catalog__slick:not(.slick-initialized) > *:nth-child(4) {
+    display: block;
+  }
+
   .catalog__item {
     -webkit-box-flex: 0;
         -ms-flex: 0 1 25%;
@@ -2949,6 +3176,10 @@ img {
 
   .gap-xs {
     margin-top: 80px;
+  }
+
+  .gap-sm {
+    margin-top: 100px;
   }
 
   .gap-md {
@@ -3356,6 +3587,38 @@ img {
       display: none;
     }
 }
+
+  .slider-catalog {
+    max-width: 1490px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .slider-catalog__desc--hov {
+    line-clamp: 8;
+    -webkit-line-clamp: 8;
+  }
+
+  .slider-catalog__hover-wrap {
+    padding: 47px 28px;
+  }
+
+  .slider-catalog__slick:not(.slick-initialized) {
+    height: 471px;
+    min-height: 471px;
+  }
+
+  .slider-catalog__slick:not(.slick-initialized) > *:nth-child(2) {
+    display: block;
+  }
+
+  .slider-catalog__slick:not(.slick-initialized) > *:nth-child(3) {
+    display: block;
+  }
+
+  .slider-catalog__slick:not(.slick-initialized) > *:nth-child(4) {
+    display: block;
+  }
 
   .catalog {
     margin-top: 40px;

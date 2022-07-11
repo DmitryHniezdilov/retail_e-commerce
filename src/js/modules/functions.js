@@ -113,4 +113,41 @@ $(document).ready(function () {
             ]
         })
     }
+
+    if($(".js-slider-catalog")){
+        $(".js-slider-catalog").slick({
+            infinite: true,
+            arrows: true,
+            dots: false,
+            focusOnSelect: true,
+            autoplay: false,
+            autoplaySpeed: 5000,
+            speed: 500,
+            slidesToShow: 4,
+            slidesToScroll: 1,
+            responsive: [
+                {
+                    breakpoint: 1024,
+                    settings: {
+                        slidesToShow: 3,
+                        dots: true,
+                    }
+                },
+                {
+                    breakpoint: 768,
+                    settings: {
+                        slidesToShow: 2,
+                        dots: true
+                    }
+                },
+                {
+                    breakpoint: 568,
+                    settings: {
+                        slidesToShow: 1,
+                        dots: true
+                    }
+                }
+            ]
+        })
+    }
 })
