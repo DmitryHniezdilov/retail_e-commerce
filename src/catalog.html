@@ -1,307 +1,334 @@
 <!DOCTYPE html>
 <html lang="en">
-    @@include('html/head.html', {
-        "title": "Catalog page e-commerce"
-    })
-    <body>
-        @@include('icons/icons.svg')
-        <div class="page">
-            @@include('html/header.html')
-            <main>
-                <div class="banner-secondary decor-bcg decor-bcg--top">
-                    <div class="banner-secondary__img-box">
-                        <img class="banner-secondary__img" src="@img/banner-secondary-bcg.jpg" alt="secondary banner background"></img>
+@@include('html/head.html', {
+"title": "Catalog page e-commerce"
+})
+
+<body>
+    @@include('icons/icons.svg')
+    <div class="page">
+        @@include('html/header.html')
+        <main>
+            <div class="banner-secondary decor-bcg decor-bcg--top">
+                <div class="banner-secondary__img-box">
+                    <img class="banner-secondary__img" src="@img/banner-secondary-bcg.jpg"
+                        alt="secondary banner background">
+                </div>
+                <div class="banner-secondary__inner center">
+                    <div class="banner-secondary__text-wrap">
+                        <h1 class="banner-secondary__title">Catalog</h1>
+                        <p class="banner-secondary__desc">Lorem Ipsum is simply dummy text of the printing and
+                            typesetting industry. Lorem Ipsum has been the industry's standard dummy text.
+                        </p>
                     </div>
-                    <div class="banner-secondary__inner center">
-                        <div class="banner-secondary__text-wrap">
-                            <h1 class="banner-secondary__title">Catalog</h1>
-                            <p class="banner-secondary__desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.
+                </div>
+            </div>
+
+            <div class="slider-catalog center gap-sm">
+                <div
+                    class="js-slider-catalog slider-catalog__slick slider-elements slider-elements--arrows slider-elements--dots">
+                    <div class="slider-catalog__slide-wrap">
+                        <a href="#" class="slider-catalog__slide-link">
+                            <div class="slider-catalog__img-box">
+                                <img class="slider-catalog__img" src="@img/catalog-1.jpg"
+                                    alt="project Kingdom Tower">
+                            </div>
+                            <div class="slider-catalog__title-wrap">
+                                <p class="slider-catalog__subtitle">Lorem Ipsum</p>
+                                <p class="slider-catalog__title">Lorem Ipsum</p>
+                                <p class="slider-catalog__desc">Lorem Ipsum</p>
+                            </div>
+                            <div class="slider-catalog__hover-wrap">
+                                <p class="slider-catalog__subtitle slider-catalog__subtitle--hov">Lorem Ipsum</p>
+                                <p class="slider-catalog__title slider-catalog__title--hov">Lorem Ipsum</p>
+                                <p class="slider-catalog__desc slider-catalog__desc--hov">Lorem Ipsum is simply dummy
+                                    text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+                                    standard dummy text ever since the 1500s,</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="slider-catalog__slide-wrap">
+                        <a href="#" class="slider-catalog__slide-link">
+                            <div class="slider-catalog__img-box">
+                                <img class="slider-catalog__img" src="@img/catalog-2.jpg"
+                                    alt="project Dubai mall">
+                            </div>
+                            <div class="slider-catalog__title-wrap">
+                                <p class="slider-catalog__subtitle">Lorem Ipsum</p>
+                                <p class="slider-catalog__title">Lorem Ipsum</p>
+                                <p class="slider-catalog__desc">Lorem Ipsum</p>
+                            </div>
+                            <div class="slider-catalog__hover-wrap">
+                                <p class="slider-catalog__subtitle slider-catalog__subtitle--hov">Lorem Ipsum</p>
+                                <p class="slider-catalog__title slider-catalog__title--hov">Lorem Ipsum</p>
+                                <p class="slider-catalog__desc slider-catalog__desc--hov">Lorem Ipsum is simply dummy
+                                    text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+                                    standard dummy text ever since the 1500s,</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="slider-catalog__slide-wrap">
+                        <a href="#" class="slider-catalog__slide-link">
+                            <div class="slider-catalog__img-box">
+                                <img class="slider-catalog__img" src="@img/catalog-3.jpg"
+                                    alt="project King Road Offices">
+                            </div>
+                            <div class="slider-catalog__title-wrap">
+                                <p class="slider-catalog__subtitle">Lorem Ipsum</p>
+                                <p class="slider-catalog__title">Lorem Ipsum</p>
+                                <p class="slider-catalog__desc">Lorem Ipsum</p>
+                            </div>
+                            <div class="slider-catalog__hover-wrap">
+                                <p class="slider-catalog__subtitle slider-catalog__subtitle--hov">Lorem Ipsum</p>
+                                <p class="slider-catalog__title slider-catalog__title--hov">Lorem Ipsum</p>
+                                <p class="slider-catalog__desc slider-catalog__desc--hov">Lorem Ipsum is simply dummy
+                                    text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+                                    standard dummy text ever since the 1500s,</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="slider-catalog__slide-wrap">
+                        <a href="#" class="slider-catalog__slide-link">
+                            <div class="slider-catalog__img-box">
+                                <img class="slider-catalog__img" src="@img/catalog-4.jpg"
+                                    alt="project Beach Tower Alupang">
+                            </div>
+                            <div class="slider-catalog__title-wrap">
+                                <p class="slider-catalog__subtitle">Lorem Ipsum</p>
+                                <p class="slider-catalog__title">Lorem Ipsum</p>
+                                <p class="slider-catalog__desc">Lorem Ipsum</p>
+                            </div>
+                            <div class="slider-catalog__hover-wrap">
+                                <p class="slider-catalog__subtitle slider-catalog__subtitle--hov">Lorem Ipsum</p>
+                                <p class="slider-catalog__title slider-catalog__title--hov">Lorem Ipsum</p>
+                                <p class="slider-catalog__desc slider-catalog__desc--hov">Lorem Ipsum is simply dummy
+                                    text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+                                    standard dummy text ever since the 1500s,</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content-center center gap-sm">
+                <div class="catalog-settings hide-to-lg">
+                    <div class="catalog-settings__label">
+                        <p class="catalog-settings__label-info">Showing <span>1</span> - <span>15</span> of
+                            <span>22</span> results</p>
+                    </div>
+                    <ul class="catalog-settings__sorting">
+                        <li class="catalog-settings__sorting-item">
+                            <button class="catalog-settings__btn-filter" aria-hidden="true">
+                                <span>Filter</span>
+                                <svg class="catalog-settings__icon-filter icon">
+                                    <use xlink:href="#icon-filter"></use>
+                                </svg>
+                            </button>
+                        </li>
+                        <li class="catalog-settings__sorting-item catalog-settings__sorting-item--select">
+                            <select class="catalog-settings__select select">
+                                <option value="1: expensive" class="select__option">Sort by Price</option>
+                                <option value="2: popularity" class="select__option">Sort by Popular</option>
+                                <option value="3: rating" class="select__option">Sort by Rating</option>
+                                <option value="4: novelty" class="select__option">Novelty</option>
+                                <option value="5: promotional" class="select__option">Promotional</option>
+                            </select>
+                        </li>
+                        <li class="catalog-settings__sorting-item catalog-settings__sorting-item--search">
+                            @@include('./html/components/search.html')
+                        </li>
+                        <li class="catalog-settings__sorting-item catalog-settings__sorting-item--display">
+                            <ul class="catalog-settings__display-list">
+                                <li class="catalog-settings__display-item">
+                                    <button class="catalog-settings__display-btn" aria-hidden="true">
+                                        <svg class="catalog-settings__icon catalog-settings__icon--display icon">
+                                            <use xlink:href="#icon-display-1"></use>
+                                        </svg>
+                                    </button>
+                                </li>
+                                <li class="catalog-settings__display-item">
+                                    <button class="catalog-settings__display-btn" aria-hidden="true">
+                                        <svg class="catalog-settings__icon catalog-settings__icon--display icon">
+                                            <use xlink:href="#icon-display-2"></use>
+                                        </svg>
+                                    </button>
+                                </li>
+                                <li class="catalog-settings__display-item">
+                                    <button class="catalog-settings__display-btn" aria-hidden="true">
+                                        <svg class="catalog-settings__icon catalog-settings__icon--display icon">
+                                            <use xlink:href="#icon-display-3"></use>
+                                        </svg>
+                                    </button>
+                                </li>
+                                <li class="catalog-settings__display-item">
+                                    <button class="catalog-settings__display-btn" aria-hidden="true">
+                                        <svg class="catalog-settings__icon catalog-settings__icon--display icon">
+                                            <use xlink:href="#icon-display-4"></use>
+                                        </svg>
+                                    </button>
+                                </li>
+                                <li class="catalog-settings__display-item">
+                                    <button class="catalog-settings__display-btn" aria-hidden="true">
+                                        <svg class="catalog-settings__icon catalog-settings__icon--display icon">
+                                            <use xlink:href="#icon-display-5"></use>
+                                        </svg>
+                                    </button>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="catalog">
+                    <div class="catalog__list">
+                        <div class="catalog__item">
+                            <a href="#" class="catalog__link">
+                                <div class="catalog__img-wrap">
+                                    <img class="catalog__img" src="@img/tile-zurich-vision.jpg"
+                                        alt="tile zurich vision">
+                                </div>
+                                <div class="catalog__desc-wrap">
+                                    <p class="catalog__title">Zurich Vision 60×60</p>
+                                    <p class="catalog__price-wrap">
+                                        <span class="catalog__price-old">449.99 SAR</span>
+                                        <span class="catalog__price-cur">237.99 SAR</span>
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="catalog__item">
+                            <a href="#" class="catalog__link">
+                                <div class="catalog__img-wrap">
+                                    <img class="catalog__img" src="@img/tile-zurich-pearl.jpg"
+                                        alt="tile zurich pearl">
+                                </div>
+                                <div class="catalog__desc-wrap">
+                                    <p class="catalog__title">Zurich Pearl 60×60</p>
+                                    <p class="catalog__price-wrap">
+                                        <span class="catalog__price-old">449.99 SAR</span>
+                                        <span class="catalog__price-cur">312.49 SAR</span>
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="catalog__item">
+                            <a href="#" class="catalog__link">
+                                <div class="catalog__img-wrap">
+                                    <img class="catalog__img" src="@img/tile-zurich-grey.jpg"
+                                        alt="tile zurich grey">
+                                </div>
+                                <div class="catalog__desc-wrap">
+                                    <p class="catalog__title">Zurich Grey 60×60</p>
+                                    <p class="catalog__price-wrap">
+                                        <span class="catalog__price-old">449.99 SAR</span>
+                                        <span class="catalog__price-cur">312.49 SAR</span>
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="catalog__item">
+                            <a href="#" class="catalog__link">
+                                <div class="catalog__img-wrap">
+                                    <img class="catalog__img" src="@img/tile-zurich-dark-grey.jpg"
+                                        alt="tile zurich dark grey">
+                                </div>
+                                <div class="catalog__desc-wrap">
+                                    <p class="catalog__title">Zurich Dark Grey 60×60</p>
+                                    <p class="catalog__price-wrap">
+                                        <span class="catalog__price-old">449.99 SAR</span>
+                                        <span class="catalog__price-cur">312.49 SAR</span>
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="catalog__item">
+                            <a href="#" class="catalog__link">
+                                <div class="catalog__img-wrap">
+                                    <img class="catalog__img" src="@img/tile-windsor-white-oak.jpg"
+                                        alt="tile windsor white oak">
+                                </div>
+                                <div class="catalog__desc-wrap">
+                                    <p class="catalog__title">Windsor White Oak</p>
+                                    <p class="catalog__price-wrap">
+                                        <span class="catalog__price-old">449.99 SAR</span>
+                                        <span class="catalog__price-cur">312.49 SAR</span>
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="catalog__item">
+                            <a href="#" class="catalog__link">
+                                <div class="catalog__img-wrap">
+                                    <img class="catalog__img" src="@img/tile-sicily-grey-decor.jpg"
+                                        alt="tile sicily grey decor">
+                                </div>
+                                <div class="catalog__desc-wrap">
+                                    <p class="catalog__title">Sicily Grey Décor 30×60</p>
+                                    <p class="catalog__price-wrap">
+                                        <span class="catalog__price-old">449.99 SAR</span>
+                                        <span class="catalog__price-cur">312.49 SAR</span>
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="catalog__item">
+                            <a href="#" class="catalog__link">
+                                <div class="catalog__img-wrap">
+                                    <img class="catalog__img" src="@img/tile-sardinia-white.jpg"
+                                        alt="tile sardinia white">
+                                </div>
+                                <div class="catalog__desc-wrap">
+                                    <p class="catalog__title">Sardinia White</p>
+                                    <p class="catalog__price-wrap">
+                                        <span class="catalog__price-old">449.99 SAR</span>
+                                        <span class="catalog__price-cur">312.49 SAR</span>
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="catalog__item">
+                            <a href="#" class="catalog__link">
+                                <div class="catalog__img-wrap">
+                                    <img class="catalog__img" src="@img/tile-sicily-grey.jpg"
+                                        alt="tile sicily grey">
+                                </div>
+                                <div class="catalog__desc-wrap">
+                                    <p class="catalog__title">Sicily Grey 30×60</p>
+                                    <p class="catalog__price-wrap">
+                                        <span class="catalog__price-old">449.99 SAR</span>
+                                        <span class="catalog__price-cur">312.49 SAR</span>
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="catalog__btn-wrap catalog__btn-wrap--top-enlg">
+                        <a href="#" class="btn">Load More</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="banner-promo gap-lg gap-btm-md-from-lg">
+                <div class="banner-promo__center center">
+                    <div class="banner-promo__paper">
+                        <div class="banner-promo__paper-inner">
+                            <h3 class="banner-promo__title">Promotional Banner</h3>
+                            <p class="banner-promo__text">
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                                has been the industry's standard dummy text.
                             </p>
                         </div>
                     </div>
-                </div>
-
-                <div class="slider-catalog center gap-sm">
-                    <div class="js-slider-catalog slider-catalog__slick slider-elements slider-elements--arrows slider-elements--dots">
-                        <div class="slider-catalog__slide-wrap">
-                            <a href="#" class="slider-catalog__slide-link">
-                                <div class="slider-catalog__img-box">
-                                    <img class="slider-catalog__img" src="@img/catalog-1.jpg" alt="project Kingdom Tower"></img>
-                                </div>
-                                <div class="slider-catalog__title-wrap">
-                                    <p class="slider-catalog__subtitle">Lorem Ipsum</p>
-                                    <p class="slider-catalog__title">Lorem Ipsum</p>
-                                    <p class="slider-catalog__desc">Lorem Ipsum</p>
-                                </div>
-                                <div class="slider-catalog__hover-wrap">
-                                    <p class="slider-catalog__subtitle slider-catalog__subtitle--hov">Lorem Ipsum</p>
-                                    <p class="slider-catalog__title slider-catalog__title--hov">Lorem Ipsum</p>
-                                    <p class="slider-catalog__desc slider-catalog__desc--hov">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="slider-catalog__slide-wrap">
-                            <a href="#" class="slider-catalog__slide-link">
-                                <div class="slider-catalog__img-box">
-                                    <img class="slider-catalog__img" src="@img/catalog-2.jpg" alt="project Dubai mall"></img>
-                                </div>
-                                <div class="slider-catalog__title-wrap">
-                                    <p class="slider-catalog__subtitle">Lorem Ipsum</p>
-                                    <p class="slider-catalog__title">Lorem Ipsum</p>
-                                    <p class="slider-catalog__desc">Lorem Ipsum</p>
-                                </div>
-                                <div class="slider-catalog__hover-wrap">
-                                    <p class="slider-catalog__subtitle slider-catalog__subtitle--hov">Lorem Ipsum</p>
-                                    <p class="slider-catalog__title slider-catalog__title--hov">Lorem Ipsum</p>
-                                    <p class="slider-catalog__desc slider-catalog__desc--hov">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="slider-catalog__slide-wrap">
-                            <a href="#" class="slider-catalog__slide-link">
-                                <div class="slider-catalog__img-box">
-                                    <img class="slider-catalog__img" src="@img/catalog-3.jpg" alt="project King Road Offices"></img>
-                                </div>
-                                <div class="slider-catalog__title-wrap">
-                                    <p class="slider-catalog__subtitle">Lorem Ipsum</p>
-                                    <p class="slider-catalog__title">Lorem Ipsum</p>
-                                    <p class="slider-catalog__desc">Lorem Ipsum</p>
-                                </div>
-                                <div class="slider-catalog__hover-wrap">
-                                    <p class="slider-catalog__subtitle slider-catalog__subtitle--hov">Lorem Ipsum</p>
-                                    <p class="slider-catalog__title slider-catalog__title--hov">Lorem Ipsum</p>
-                                    <p class="slider-catalog__desc slider-catalog__desc--hov">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="slider-catalog__slide-wrap">
-                            <a href="#" class="slider-catalog__slide-link">
-                                <div class="slider-catalog__img-box">
-                                    <img class="slider-catalog__img" src="@img/catalog-4.jpg" alt="project Beach Tower Alupang"></img>
-                                </div>
-                                <div class="slider-catalog__title-wrap">
-                                    <p class="slider-catalog__subtitle">Lorem Ipsum</p>
-                                    <p class="slider-catalog__title">Lorem Ipsum</p>
-                                    <p class="slider-catalog__desc">Lorem Ipsum</p>
-                                </div>
-                                <div class="slider-catalog__hover-wrap">
-                                    <p class="slider-catalog__subtitle slider-catalog__subtitle--hov">Lorem Ipsum</p>
-                                    <p class="slider-catalog__title slider-catalog__title--hov">Lorem Ipsum</p>
-                                    <p class="slider-catalog__desc slider-catalog__desc--hov">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
-                                </div>                          
-                            </a>
-                        </div>
+                    <div class="banner-promo__img-box">
+                        <img class="banner-promo__img" src="@img/banner-promo-bcg.jpg" alt="img-banner-index-2">
                     </div>
                 </div>
+            </div>
+        </main>
+        @@include('html/footer.html', {
+        "class": "decor-bcg decor-bcg--btm"
+        })
+    </div>
+    <script src="js/main.min.js"></script>
+</body>
 
-                <section class="content-center center gap-sm">
-                    <div class="catalog-settings hide-to-lg">
-                        <div class="catalog-settings__label">
-                            <p class="catalog-settings__label-info">Showing <span>1</span> - <span>15</span> of <span>22</span> results</p>
-                        </div>
-                        <ul class="catalog-settings__sorting">
-                            <li class="catalog-settings__sorting-item">
-                                <button class="catalog-settings__btn-filter" aria-hidden="true">
-                                    <span>Filter</span>
-                                    <svg class="catalog-settings__icon-filter icon">
-                                        <use xlink:href="#icon-filter"></use>
-                                    </svg>
-                                </button>
-                            </li>
-                            <li class="catalog-settings__sorting-item catalog-settings__sorting-item--select">
-                                <select class="catalog-settings__select select">
-                                    <option value="1: expensive" class="select__option">Sort by Price</option>
-                                    <option value="2: popularity" class="select__option">Sort by Popular</option>
-                                    <option value="3: rating" class="select__option">Sort by Rating</option>
-                                    <option value="4: novelty" class="select__option">Novelty</option>
-                                    <option value="5: promotional" class="select__option">Promotional</option>
-                                </select>
-                            </li>
-                            <li class="catalog-settings__sorting-item catalog-settings__sorting-item--search">
-                                @@include('./html/components/search.html')
-                            </li>
-                            <li class="catalog-settings__sorting-item catalog-settings__sorting-item--display">
-                                <ul class="catalog-settings__display-list">
-                                    <li class="catalog-settings__display-item">
-                                        <button class="catalog-settings__display-btn" aria-hidden="true">
-                                            <svg class="catalog-settings__icon catalog-settings__icon--display icon">
-                                                <use xlink:href="#icon-display-1"></use>
-                                            </svg>
-                                        </button>
-                                    </li>
-                                    <li class="catalog-settings__display-item">
-                                        <button class="catalog-settings__display-btn" aria-hidden="true">
-                                            <svg class="catalog-settings__icon catalog-settings__icon--display icon">
-                                                <use xlink:href="#icon-display-2"></use>
-                                            </svg>
-                                        </button>
-                                    </li>
-                                    <li class="catalog-settings__display-item">
-                                        <button class="catalog-settings__display-btn" aria-hidden="true">
-                                            <svg class="catalog-settings__icon catalog-settings__icon--display icon">
-                                                <use xlink:href="#icon-display-3"></use>
-                                            </svg>
-                                        </button>
-                                    </li>
-                                    <li class="catalog-settings__display-item">
-                                        <button class="catalog-settings__display-btn" aria-hidden="true">
-                                            <svg class="catalog-settings__icon catalog-settings__icon--display icon">
-                                                <use xlink:href="#icon-display-4"></use>
-                                            </svg>
-                                        </button>
-                                    </li>
-                                    <li class="catalog-settings__display-item">
-                                        <button class="catalog-settings__display-btn" aria-hidden="true">
-                                            <svg class="catalog-settings__icon catalog-settings__icon--display icon">
-                                                <use xlink:href="#icon-display-5"></use>
-                                            </svg>
-                                        </button>
-                                    </li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="catalog">
-                        <div class="catalog__list">
-                            <div class="catalog__item">
-                                <a href="#" class="catalog__link">
-                                    <div class="catalog__img-wrap">
-                                        <img class="catalog__img" src="@img/tile-zurich-vision.jpg" alt="tile zurich vision"></img>
-                                    </div>
-                                    <div class="catalog__desc-wrap">
-                                        <p class="catalog__title">Zurich Vision 60×60</p>
-                                        <p class="catalog__price-wrap">
-                                            <span class="catalog__price-old">449.99 SAR</span>
-                                            <span class="catalog__price-cur">237.99 SAR</span>
-                                        </p>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="catalog__item">
-                                <a href="#" class="catalog__link">
-                                    <div class="catalog__img-wrap">
-                                        <img class="catalog__img" src="@img/tile-zurich-pearl.jpg" alt="tile zurich pearl"></img>
-                                    </div>
-                                    <div class="catalog__desc-wrap">
-                                        <p class="catalog__title">Zurich Pearl 60×60</p>
-                                        <p class="catalog__price-wrap">
-                                            <span class="catalog__price-old">449.99 SAR</span>
-                                            <span class="catalog__price-cur">312.49 SAR</span>
-                                        </p>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="catalog__item">
-                                <a href="#" class="catalog__link">
-                                    <div class="catalog__img-wrap">
-                                        <img class="catalog__img" src="@img/tile-zurich-grey.jpg" alt="tile zurich grey"></img>
-                                    </div>
-                                    <div class="catalog__desc-wrap">
-                                        <p class="catalog__title">Zurich Grey 60×60</p>
-                                        <p class="catalog__price-wrap">
-                                            <span class="catalog__price-old">449.99 SAR</span>
-                                            <span class="catalog__price-cur">312.49 SAR</span>
-                                        </p>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="catalog__item">
-                                <a href="#" class="catalog__link">
-                                    <div class="catalog__img-wrap">
-                                        <img class="catalog__img" src="@img/tile-zurich-dark-grey.jpg" alt="tile zurich dark grey"></img>
-                                    </div>
-                                    <div class="catalog__desc-wrap">
-                                        <p class="catalog__title">Zurich Dark Grey 60×60</p>
-                                        <p class="catalog__price-wrap">
-                                            <span class="catalog__price-old">449.99 SAR</span>
-                                            <span class="catalog__price-cur">312.49 SAR</span>
-                                        </p>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="catalog__item">
-                                <a href="#" class="catalog__link">
-                                    <div class="catalog__img-wrap">
-                                        <img class="catalog__img" src="@img/tile-windsor-white-oak.jpg" alt="tile windsor white oak"></img>
-                                    </div>
-                                    <div class="catalog__desc-wrap">
-                                        <p class="catalog__title">Windsor White Oak</p>
-                                        <p class="catalog__price-wrap">
-                                            <span class="catalog__price-old">449.99 SAR</span>
-                                            <span class="catalog__price-cur">312.49 SAR</span>
-                                        </p>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="catalog__item">
-                                <a href="#" class="catalog__link">
-                                    <div class="catalog__img-wrap">
-                                        <img class="catalog__img" src="@img/tile-sicily-grey-decor.jpg" alt="tile sicily grey decor"></img>
-                                    </div>
-                                    <div class="catalog__desc-wrap">
-                                        <p class="catalog__title">Sicily Grey Décor 30×60</p>
-                                        <p class="catalog__price-wrap">
-                                            <span class="catalog__price-old">449.99 SAR</span>
-                                            <span class="catalog__price-cur">312.49 SAR</span>
-                                        </p>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="catalog__item">
-                                <a href="#" class="catalog__link">
-                                    <div class="catalog__img-wrap">
-                                        <img class="catalog__img" src="@img/tile-sardinia-white.jpg" alt="tile sardinia white"></img>
-                                    </div>
-                                    <div class="catalog__desc-wrap">
-                                        <p class="catalog__title">Sardinia White</p>
-                                        <p class="catalog__price-wrap">
-                                            <span class="catalog__price-old">449.99 SAR</span>
-                                            <span class="catalog__price-cur">312.49 SAR</span>
-                                        </p>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="catalog__item">
-                                <a href="#" class="catalog__link">
-                                    <div class="catalog__img-wrap">
-                                        <img class="catalog__img" src="@img/tile-sicily-grey.jpg" alt="tile sicily grey"></img>
-                                    </div>
-                                    <div class="catalog__desc-wrap">
-                                        <p class="catalog__title">Sicily Grey 30×60</p>
-                                        <p class="catalog__price-wrap">
-                                            <span class="catalog__price-old">449.99 SAR</span>
-                                            <span class="catalog__price-cur">312.49 SAR</span>
-                                        </p>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="catalog__btn-wrap catalog__btn-wrap--top-enlg">
-                            <a href="#" class="btn">Load More</a>
-                        </div>
-                    </div>
-                </section>
-
-                <div class="banner-promo gap-lg gap-btm-md-from-lg">
-                    <div class="banner-promo__center center">
-                        <div class="banner-promo__paper">
-                            <div class="banner-promo__paper-inner">
-                                <h3 class="banner-promo__title">Promotional Banner</h3>
-                                <p class="banner-promo__text">
-                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="banner-promo__img-box">
-                            <img class="banner-promo__img" src="@img/banner-promo-bcg.jpg" alt="img-banner-index-2"></img>
-                        </div>
-                    </div>
-                </div>
-            </main>
-            @@include('html/footer.html', {
-                "class": "decor-bcg decor-bcg--btm"
-            })
-        </div>
-        <script src="js/main.min.js"></script>
-    </body>
 </html>
